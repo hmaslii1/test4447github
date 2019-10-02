@@ -1,0 +1,67 @@
+{
+  "type": "object",
+  "comment": "Blank",
+  "properties": {
+    "Submit": {
+      "type": "action",
+      "control": "action.click",
+      "selector": "input[id='myButton']"
+    },
+    "Cancel": {
+      "type": "action"
+    },
+    "Employee": {
+      "type": "string",
+      "control": "text",
+      "selector": "input[id='employeeid']"
+    },
+    "AssetTag": {
+      "type": "string",
+      "control": "text",
+      "selector": "input[id='assettag']"
+    },
+    "Priority": {
+      "type": "select",
+      "control": "select",
+      "selector": "select"
+    },
+    "CurrentBuilding": {
+      "type": "string",
+      "control": "text",
+      "selector": "input[id='currentbuilding']"
+    },
+    "CurrentRoom": {
+      "type": "string",
+      "control": "text",
+      "selector": "input[id='currentroom']"
+    },
+    "NewBuilding": {
+      "type": "string",
+      "control": "text",
+      "selector": "input[id='newbuilding']"
+    },
+    "NewRoom": {
+      "type": "string",
+      "control": "text",
+      "selector": "input[id='newroom']"
+    },
+    "menu": {
+      "type": "action"
+    },
+    "isTransferForm": {
+      "type": "identifier",
+      "control": "exists",
+      "selector": "p",
+      "selectContains": "Enter the following information."
+    }
+  },
+  "id": "transferform",
+  "connect": [
+    {
+      "match": [
+        "isTransferForm"
+      ],
+      "event": "transferform"
+    }
+  ]
+}

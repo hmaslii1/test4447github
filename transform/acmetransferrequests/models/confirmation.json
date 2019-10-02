@@ -1,0 +1,143 @@
+{
+  "type": "object",
+  "comment": "Blank",
+  "properties": {
+    "confirmationtext": {
+      "type": "string",
+      "update": {
+        "type": "none"
+      },
+      "control": {
+        "control": "property.innerText",
+        "fn": "croptrackingnumber",
+        "args": [
+          ""
+        ]
+      }
+    },
+    "confirmationdescription": {
+      "type": "string",
+      "update": {
+        "type": "none"
+      }
+    },
+    "EmployeeID": {
+      "type": "string",
+      "update": {
+        "type": "none"
+      },
+      "control": {
+        "control": "property.innerText",
+        "fn": "croptrackingnumber",
+        "args": [
+          ""
+        ]
+      },
+      "selector": "p",
+      "selectContains": "Employee ID:"
+    },
+    "AssetTag": {
+      "type": "string",
+      "control": {
+        "control": "property.innerText",
+        "fn": "cropassets",
+        "args": [
+          ""
+        ]
+      },
+      "selector": "p",
+      "selectContains": "Asset tag"
+    },
+    "CurrentBuilding": {
+      "type": "string",
+      "control": {
+        "control": "property.innerText",
+        "fn": "cropcurrentbuilding",
+        "args": [
+          [
+            ""
+          ]
+        ]
+      },
+      "selector": "p",
+      "selectContains": "Current Building"
+    },
+    "CurrentRoom": {
+      "type": "string",
+      "control": {
+        "control": "property.innerText",
+        "fn": "croptrackingnumber",
+        "args": [
+          ""
+        ]
+      },
+      "selector": "p",
+      "selectContains": "Current Room"
+    },
+    "NewBuilding": {
+      "type": "string",
+      "control": {
+        "control": "property.innerText",
+        "fn": "croptrackingnumber",
+        "args": [
+          ""
+        ]
+      },
+      "selector": "p",
+      "selectContains": "New Building"
+    },
+    "NewRoom": {
+      "type": "string",
+      "control": {
+        "control": "property.innerText",
+        "fn": "cropnewroom",
+        "args": [
+          ""
+        ]
+      },
+      "selector": "p",
+      "selectContains": "New Room"
+    },
+    "Priority": {
+      "type": "string",
+      "control": {
+        "control": "property.innerText",
+        "fn": "croppriority",
+        "args": [
+          ""
+        ]
+      },
+      "selector": "p",
+      "selectContains": "Priority"
+    },
+    "isConfirmation": {
+      "type": "identifier",
+      "control": "exists",
+      "selector": "p",
+      "selectContains": "Order Summary"
+    },
+    "TrackingNumber": {
+      "type": "string",
+      "control": {
+        "control": "property.innerText",
+        "fn": "croptrackingnumber",
+        "args": [
+          ""
+        ]
+      },
+      "selector": "h2"
+    },
+    "done": {
+      "type": "action"
+    }
+  },
+  "id": "confirmation",
+  "connect": [
+    {
+      "match": [
+        "isConfirmation"
+      ],
+      "event": "confirmation"
+    }
+  ]
+}

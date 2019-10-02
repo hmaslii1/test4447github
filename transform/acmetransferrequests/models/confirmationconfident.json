@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "comment": "Blank",
+  "properties": {
+    "trackingnumber": {
+      "type": "string",
+      "control": {
+        "control": "property.innerText",
+        "fn": "croptrackingnumber",
+        "args": [
+          ""
+        ]
+      },
+      "selector": "p"
+    },
+    "isTrackingnumber": {
+      "type": "string",
+      "control": "property.innerText",
+      "selector": "p",
+      "selectContains": "Order Summary"
+    },
+    "done": {
+      "type": "action"
+    }
+  },
+  "id": "confirmationconfident",
+  "connect": [
+    {
+      "match": [],
+      "event": "confirmationconfident"
+    }
+  ]
+}

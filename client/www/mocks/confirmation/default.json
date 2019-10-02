@@ -1,0 +1,12 @@
+{
+  "Priority": "Medium",
+  "confirmationtext": "Transaction Completed",
+  "EmployeeID": "149302",
+  "confirmationdescription": "Description text goes here.\n                            <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing.",
+  "AssetTag": "DD-3921-2331",
+  "CurrentBuilding": "B-778",
+  "CurrentRoom": "256",
+  "NewBuilding": "C-321",
+  "NewRoom": "134",
+  "TrackingNumber": "4834805072697472"
+}

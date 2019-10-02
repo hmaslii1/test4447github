@@ -1,0 +1,15 @@
+screen-login-phoneportrait {
+
+    .item-input > .item-inner {
+        border-bottom: none;
+
+        input {
+            color: white;
+        }
+
+        input::placeholder {
+            color: rgba(237,237,237, 0.8);
+        }
+    }
+    
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Acme Transfer Requests",
+  "description": "",
+  "defaultLayout": "PhonePortrait",
+  "previewToken": "26d268aa",
+  "clientVersion": "6.1.0-dev",
+  "isTemplate": false,
+  "isAppTemplate": true,
+  "theme": "Essential",
+  "creatorId": "admin",
+  "isBuiltInTemplate": true,
+  "screensCount": 4,
+  "creatorName": "PowWow Admin",
+  "explorations": [
+    "acmetransferrequests"
+  ],
+  "disableSideMenu": false,
+  "iconUrl": "/previews/login.png"
+}

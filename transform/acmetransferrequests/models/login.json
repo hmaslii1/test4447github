@@ -1,0 +1,45 @@
+{
+  "type": "object",
+  "comment": "Login",
+  "properties": {
+    "username": {
+      "type": "string",
+      "label": "username",
+      "control": "text",
+      "selector": "input[id='username']"
+    },
+    "password": {
+      "type": "string",
+      "label": "password",
+      "control": "text",
+      "selector": "input[id='password']"
+    },
+    "submit": {
+      "type": "action",
+      "control": "action.click",
+      "selector": "input[id='submit']"
+    },
+    "ErrorMessage": {
+      "type": "string",
+      "update": {
+        "type": "none"
+      },
+      "control": "property.innerText",
+      "selector": "h3"
+    },
+    "isLogin": {
+      "type": "identifier",
+      "control": "exists",
+      "selector": "b[id='note']"
+    }
+  },
+  "id": "login",
+  "connect": [
+    {
+      "match": [
+        "isLogin"
+      ],
+      "event": "login"
+    }
+  ]
+}

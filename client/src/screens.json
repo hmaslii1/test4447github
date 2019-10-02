@@ -1,0 +1,34 @@
+{
+  "id": "__BASE__",
+  "name": "test4447github",
+  "screens": [
+    {
+      "id": "login",
+      "name": "Login",
+      "sourceScreenId": "login",
+      "sourceAppId": "AcmeTransferRequests",
+      "disableMenuSwipe": true
+    },
+    {
+      "id": "transferform",
+      "name": "TransferForm",
+      "sourceScreenId": "transferform",
+      "sourceAppId": "AcmeTransferRequests"
+    },
+    {
+      "id": "confirmation",
+      "name": "Confirmation",
+      "sourceScreenId": "confirmation",
+      "sourceAppId": "AcmeTransferRequests"
+    },
+    {
+      "id": "settings",
+      "name": "Settings",
+      "modal": true,
+      "sourceScreenId": "settings",
+      "sourceAppId": "AcmeTransferRequests",
+      "preventAutoDismiss": true
+    }
+  ],
+  "startScreen": "login"
+}

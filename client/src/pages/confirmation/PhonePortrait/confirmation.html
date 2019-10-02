@@ -1,0 +1,64 @@
+<ion-header data-comp-id="header.1"></ion-header>
+<ion-content class="content-calm" data-comp-id="content.1">
+    <div data-comp-id="div.1" style="padding: 20% 10%;">
+        <ion-row data-comp-id="row.1" style="margin: 0 0 0; padding: 0px;">
+            <ion-col data-comp-id="column.1" style="text-align: center;">
+                <button color="primary" data-comp-id="button.1" icon-only="" ion-button="" large=""
+                    style="font-size: 25px; border-radius: 40px;">
+                    <ion-icon class="ion-md-checkmark" color="light"></ion-icon>
+                </button>
+            </ion-col>
+        </ion-row>
+        <ion-card data-comp-id="card.1" style="margin: -40px 10px; padding: 10px;">
+            <ion-card-content data-comp-id="card-content.1" style="padding: 13px 10px;">
+                <ion-row data-comp-id="row.2">
+                    <ion-col data-comp-id="column.2" style="text-align: center;">
+                        <div color="coal" data-comp-id="text.1" ion-text=""
+                            style="font-size: 18px; margin: 30px 10px 10px;">Order Complete</div>
+                        <div color="dark" data-comp-id="text.2" ion-text=""
+                            style="font-size: 18px; margin: 10px 10px 0px;">Transaction #</div>
+                        <div [innerHTML]="data.TrackingNumber" color="primary" data-comp-id="text.3"
+                            ion-text="" style="font-size: 18px; margin: 0 0 30px;">Some text</div>
+                        <ion-row data-comp-id="row.3" style="margin: 10px 0px;">
+                            <ion-col data-comp-id="column.3" style="text-align: left;">
+                                <div color="dark" data-comp-id="text.4" ion-text="">Employee ID</div>
+                                <div [innerHTML]="data.EmployeeID" color="black" data-comp-id="text.5"
+                                    ion-text="">Some text</div>
+                            </ion-col>
+                            <ion-col data-comp-id="column.4" style="text-align: left;">
+                                <div color="dark" data-comp-id="text.6" ion-text="">Asset Tag #</div>
+                                <div [innerHTML]="data.AssetTag" color="black" data-comp-id="text.7" ion-text=""
+                                    style="">Some text</div>
+                            </ion-col>
+                        </ion-row>
+                        <ion-row data-comp-id="row.4">
+                            <ion-col data-comp-id="column.5" style="text-align: left;">
+                                <div color="dark" data-comp-id="text.8" ion-text="">Location</div>
+                                <div [innerHTML]="data.CurrentBuilding" color="black" data-comp-id="text.9"
+                                    ion-text="">Some text</div>
+                                <div [innerHTML]="data.CurrentRoom" color="coal" data-comp-id="text.10"
+                                    ion-text="">Some text</div>
+                            </ion-col>
+                            <ion-col data-comp-id="column.6" style="text-align: left;">
+                                <div color="dark" data-comp-id="text.11" ion-text="">New Location</div>
+                                <div [innerHTML]="data.NewBuilding" color="black" data-comp-id="text.12"
+                                    ion-text="">Some text</div>
+                                <div [innerHTML]="data.NewRoom" color="coal" data-comp-id="text.13" ion-text=""
+                                    style="">Some text</div>
+                            </ion-col>
+                        </ion-row>
+                        <ion-row data-comp-id="row.5">
+                            <ion-col data-comp-id="column.7" style="text-align: left;">
+                                <div color="dark" data-comp-id="text.14" ion-text="">Priority</div>
+                                <div [innerHTML]="data.Priority" color="black" data-comp-id="text.15"
+                                    ion-text="">Some text</div>
+                            </ion-col>
+                        </ion-row>
+                    </ion-col>
+                </ion-row>
+                <button (click)="action('done')" block="" color="highlight"
+                    data-comp-id="button.1" ion-button="" style="margin: 20px 0px 25px;"><span>Done</span></button>
+            </ion-card-content>
+        </ion-card>
+    </div>
+</ion-content>

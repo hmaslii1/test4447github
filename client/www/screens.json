@@ -1,0 +1,34 @@
+{
+  "id": "__BASE__",
+  "name": "Acme Transfer Requests",
+  "screens": [
+    {
+      "id": "login",
+      "name": "Login",
+      "sourceScreenId": "Login_LoginOrange",
+      "sourceAppId": "universaltemplates",
+      "disableMenuSwipe": true
+    },
+    {
+      "id": "transferform",
+      "name": "TransferForm",
+      "sourceScreenId": "Forms_FormMid",
+      "sourceAppId": "universaltemplates"
+    },
+    {
+      "id": "confirmation",
+      "name": "Confirmation",
+      "sourceScreenId": "Confirmation_ConfirmationConfident",
+      "sourceAppId": "universaltemplates"
+    },
+    {
+      "id": "settings",
+      "name": "Settings",
+      "modal": true,
+      "sourceScreenId": "settings",
+      "sourceAppId": "touchidtesting",
+      "preventAutoDismiss": true
+    }
+  ],
+  "startScreen": "login"
+}

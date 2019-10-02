@@ -1,0 +1,148 @@
+{
+  "menu": {
+    "type": "object",
+    "properties": {
+      "logout": {
+        "type": "action"
+      }
+    },
+    "id": "menu",
+    "sourcePath": "menu"
+  },
+  "transferform": {
+    "type": "object",
+    "comment": "Blank",
+    "properties": {
+      "Submit": {
+        "type": "action"
+      },
+      "Cancel": {
+        "type": "action"
+      },
+      "Employee": {
+        "type": "string"
+      },
+      "AssetTag": {
+        "type": "string"
+      },
+      "Priority": {
+        "type": "select"
+      },
+      "CurrentBuilding": {
+        "type": "string"
+      },
+      "CurrentRoom": {
+        "type": "string"
+      },
+      "NewBuilding": {
+        "type": "string"
+      },
+      "NewRoom": {
+        "type": "string"
+      },
+      "menu": {
+        "type": "action"
+      },
+      "Submit2": {
+        "type": "action"
+      }
+    },
+    "id": "transferform",
+    "sourcePath": "transferform"
+  },
+  "confirmation": {
+    "type": "object",
+    "comment": "Blank",
+    "properties": {
+      "confirmationtext": {
+        "type": "string",
+        "update": {
+          "type": "none"
+        }
+      },
+      "confirmationdescription": {
+        "type": "string",
+        "update": {
+          "type": "none"
+        }
+      },
+      "EmployeeID": {
+        "type": "string",
+        "update": {
+          "type": "none"
+        }
+      },
+      "AssetTag": {
+        "type": "string",
+        "update": {
+          "type": "none"
+        }
+      },
+      "CurrentBuilding": {
+        "type": "string"
+      },
+      "CurrentRoom": {
+        "type": "string"
+      },
+      "NewBuilding": {
+        "type": "string"
+      },
+      "NewRoom": {
+        "type": "string"
+      },
+      "Priority": {
+        "type": "string"
+      },
+      "TrackingNumber": {
+        "type": "string",
+        "update": {
+          "type": "none"
+        }
+      },
+      "done": {
+        "type": "action"
+      }
+    },
+    "id": "confirmation",
+    "sourcePath": "confirmation"
+  },
+  "login": {
+    "type": "object",
+    "comment": "Login",
+    "properties": {
+      "username": {
+        "type": "string",
+        "label": "username"
+      },
+      "password": {
+        "type": "string",
+        "label": "password"
+      },
+      "submit": {
+        "type": "action",
+        "parameters": {
+          "username": {
+            "type": "string"
+          },
+          "password": {
+            "type": "string"
+          }
+        }
+      },
+      "ErrorMessage": {
+        "type": "string",
+        "update": {
+          "type": "none"
+        }
+      }
+    },
+    "id": "login",
+    "sourcePath": "login"
+  },
+  "settings": {
+    "type": "object",
+    "comment": "Blank",
+    "properties": {},
+    "id": "settings"
+  }
+}
